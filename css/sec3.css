@@ -33,6 +33,36 @@
     }
    
   }
+  @media screen and (max-width: 1000px) {
+    .column-60,
+    .column-40 {
+      width: 100%;
+      float: none;
+      padding: 0;
+      margin-top: 300px;
+    }
+   
+  }
+  @media screen and (max-width: 600px) {
+    .column-60,
+    .column-40 {
+      width: 100%;
+      float: none;
+      padding: 0;
+      margin-top: 300px;
+    }
+   
+  }
+  @media screen and (max-width: 768px) {
+    .column-60,
+    .column-40 {
+      width: 100%;
+      float: none;
+      padding: 0;
+      margin-top: 300px;
+    }
+   
+  }
   #features {
     text-align: center;
     background-color: #EEEEEE;
