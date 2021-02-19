@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Strommad</title>
+  <title>Strommad | Financial Inclusion</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="Strommad">
   <meta content="" name="Strommad">
@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;600&display=swap" rel="stylesheet">
-  <link href="img/favicon.png" rel="icon">
+  <link href="img/Strommad-icontab.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Bootstrap CSS File -->
@@ -32,13 +32,27 @@
   <link rel="stylesheet" href="css/sec3.css" rel="stylesheet">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+  <script>
+    window.onscroll = function (e) {
+      window.addEventListener('scroll', function ( event ) {
+
+        if (document.documentElement.scrollTop < 500) {
+          document.getElementById("mainNav").style.backgroundColor = "transparent";
+        } else {
+          document.getElementById("mainNav").style.backgroundColor = "#10140c";
+        }
+
+      }, false);
+    }
+  </script>
+
 </head>
 
 <body id="page-top">
 
   <!--/ Nav Star /-->
 
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav" style="background-color: transparent">
     <div class="container">
       <!-- main logo starts -->
       <a class="navbar-brand js-scroll" href="#page-top">
@@ -182,18 +196,15 @@
 
 
             <img class="img-fluid" src="img/White Strommad logo transparent.svg" alt="Header-image">
-            <p class="intro-subtitle"><span class="text-slider-items">Digital Identity,Innovation, Digital
-                Transformation,Financial Inclusion</span><strong class="text-slider"></strong>
+            <p class="intro-subtitle"><span class="text-slider-items">Digital Identity,Innovation, Digital Transformation,Financial Inclusion</span><strong class="text-slider"></strong>
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <br>
-    <br>
     <section class="">
-    <div  class="abou3">
+    <div  class="abou3" style="padding-top: 30px">
       <section id="about">
         <h1> ABOUT </h1>
     
@@ -215,7 +226,6 @@
       </section>
     </section>
     </div>
-    <br>
 
   <!-- ssssssssssssssssssssss -->
 
@@ -228,8 +238,12 @@
   <section class="" id="features" id="solutions">
 
 
-     <div class="grid">
-      <div class="column-40">
+     <div style="padding-top: 50px; padding-bottom: 50px" class="grid">
+      <div style="float: left; width: 40%">
+        <div class="image-div" style="margin-bottom: 20px">
+          <div class="show-on-mobile" style="background-image: url('img/Shommad.png');" data-stellar-background-ratio="0.5"></div>
+          <img src="img/12ID_v3_transparent.png" width="240" height="100" id="logo">
+        </div>
         <div class="image-div">
           <div class="show-on-mobile" style="background-image: url('img/Shommad.png');" data-stellar-background-ratio="0.5"></div>
           <img src="img/Shommad.png" alt="Remedi mobile app" width="200" height="497" id="shom">
@@ -237,7 +251,7 @@
        <a <button style="background-color: #004B87"; type="button" class="btn btn-primary btn-lg" href="https://12id.com/" target="_blank">Visit</button></a>
       </div>
 
-      <div class="column-60">
+      <div>
         <div class="grid2x2">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="img/Fingerprint-Icon.svg" alt="Fingerprint-Icon">
@@ -410,14 +424,16 @@ sharing or storing any sensitive data.</p>
 
   <!--  Bootstrap HTML  -->
 
-  <div id="lawmsg" class="alert alert-info alert-dismissible h6 fade show fixed-bottom" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    &nbsp; We use cookies on this website to distinguish you from other users. &nbsp; We use this data to enhance your
+  <div style="display: flex; background-color: #104b87" id="lawmsg" class="alert alert-dismissible fade show fixed-bottom" role="alert">
+    &nbsp; <div style="flex: 1; color: whitesmoke">
+    We use cookies on this website to distinguish you from other users. &nbsp; We use this data to enhance your
     experience and for targeted advertising. &nbsp; By continuing to use this website you consent to our use of cookies.
     &nbsp; For more information, please see our &nbsp;
     <a href="cookies.html" target="_blank">Cookie Policy</a>.
+  </div>
+    <div style="display: flex">
+      <button style="margin: auto; margin-left: 5px" type="button" class="btn btn-primary btn-sm border">Cookie Settings</button>
+      <button style="margin: auto; margin-left: 5px" type="button" class="btn btn-primary btn-sm border" data-dismiss="alert">Accept</button></div>
   </div>
 
 
@@ -425,7 +441,7 @@ sharing or storing any sensitive data.</p>
 
   -->
 
-  <footer class="footer">
+  <footer style="padding-bottom: 50px" class="footer">
     <br>
     <p class="pfooter">@ 2021 Strommad AB<br>
       <br>
