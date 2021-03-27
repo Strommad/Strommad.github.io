@@ -1290,7 +1290,14 @@ footer .credits a {
   .cookies-p, .privacy-p {
     padding: 18px;
   }
-  
+
+  .small-mt-4{
+    margin-top: 1.5rem;
+  }
+
+  .p-mobile {
+    padding-bottom: 280px;
+  }
 }
 
 .img-container {
