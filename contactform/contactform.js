@@ -90,27 +90,30 @@ jQuery(document).ready(function($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
+
+    $('#contact_form').submit();
+
     // var action = $(this).attr('action');
     // if( ! action ) {
-      // action = 'contact.php';
+    //   action = 'contact.php';
     // }
-    $.ajax({
-     type : "POST",
-      url: 'https://formspree.io/f/mwkaedey',
-      data: str,
-      success: function(msg) {
-        if (msg == 'OK') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
-        } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
-        }
+    // $.ajax({
+    //  type : "POST",
+    //   url: 'contact.php',
+    //   data: str,
+    //   success: function(msg) {
+    //     if (msg == 'OK') {
+    //       $("#sendmessage").addClass("show");
+    //       $("#errormessage").removeClass("show");
+    //       $('.contactForm').find("input, textarea").val("");
+    //     } else {
+    //       $("#sendmessage").removeClass("show");
+    //       $("#errormessage").addClass("show");
+    //       $('#errormessage').html(msg);
+    //     }
 
-      }
-    });
+    //   }
+    // });
     return false;
   });
 
