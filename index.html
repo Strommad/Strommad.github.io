@@ -25,6 +25,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/sec3.css" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       window.onscroll = function (e) {
         window.addEventListener('scroll', function ( event ) {
@@ -178,7 +179,7 @@
       </div>
     </div>
     <div  class="abou3 p-mobile" style="padding-top: 50px; box-sizing: unset;">
-      <section id="about">
+      <section id="about" style="margin-top: 110px;">
         <h1> ABOUT </h1>
         <p class="aboutpra">Strommad AB is a Swedish based private limited company. The company provides digital
           solutions, in order to increase<br>
@@ -199,11 +200,8 @@
     <!-- ........................................................................ -->
     <section class="p-5" id="features" id="solutions">
       <div class="container">
-        <div class="row d-flex justify-content-center">
-          <img src="img/12ID_v3_transparent.png" width="200" height="70" id="logo" class="small-mt-4 mb-4"><br>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+        <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center py-3">
            <div class="d-flex justify-content-center align-items-center flex-column">
               <img src="img/Shommad.png" alt="" width="200">
               <a style="background-color: #004B87"; type="button" class="btn btn-primary btn-lg" href="https://12id.com/" target="_blank">Visit</a>
@@ -271,7 +269,7 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="" method="post" role="form" class="contactForm">
+                      <form method="POST" role="form" class="contactForm">
                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                         <div id="errormessage"></div>
                         <div class="row">

@@ -90,17 +90,15 @@ jQuery(document).ready(function($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) {
-      action = './contactform.php';
-    }
-    debugger
+    // var action = $(this).attr('action');
+    // if( ! action ) {
+      // action = 'contact.php';
+    // }
     $.ajax({
-      type: "POST",
-      url: action,
+     type : "POST",
+      url: 'https://formspree.io/f/mwkaedey',
       data: str,
       success: function(msg) {
-        alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
