@@ -1298,6 +1298,9 @@ footer .credits a {
   .p-mobile {
     padding-bottom: 280px;
   }
+  .p-about {
+    padding: 18px;;
+  }
 }
 
 .img-container {
