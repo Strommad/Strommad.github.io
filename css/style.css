@@ -1301,6 +1301,18 @@ footer .credits a {
   .p-about {
     padding: 18px;;
   }
+
+  .cookies-m {
+    display: block !important;
+  }
+
+  .cookies-button {
+    margin-top: 14px;
+  }
+
+  .flex-col-m{
+    flex-direction: column !important;
+  }
 }
 
 .img-container {
